@@ -35,7 +35,7 @@ background = alt.Chart(states).mark_geoshape(
     height=600
 )
 
-st.header("A visual visited Cities")
+st.header("A visual of visited Cities")
 st.subheader("The Map:")
 st.write(background + points)
 
