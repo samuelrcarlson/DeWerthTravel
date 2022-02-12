@@ -42,4 +42,6 @@ st.write(background + points)
 st.subheader("The list of Cities:")
 st.dataframe(citylist)
 
-
+with st.expander("Credits"):
+    st.write("Made by Sam Carlson: https://github.com/samuelrcarlson")
+    st.write("Made possible using https://simplemaps.com/data/us-cities")
