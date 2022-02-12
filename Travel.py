@@ -28,8 +28,8 @@ points = alt.Chart(final).mark_circle().encode(
     tooltip='city'
 )
 background = alt.Chart(states).mark_geoshape(
-    fill='Azure2',
-    stroke='white'
+    fill='lightgrey',
+    stroke='black'
 ).project('albersUsa').properties(
     width=1000,
     height=600
