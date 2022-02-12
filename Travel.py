@@ -28,16 +28,18 @@ points = alt.Chart(final).mark_circle().encode(
     tooltip='city'
 )
 background = alt.Chart(states).mark_geoshape(
-    fill='lightgray',
+    fill='Azure2',
     stroke='white'
 ).project('albersUsa').properties(
     width=1000,
     height=600
 )
 
-st.header("The Map:")
+st.header("A visual of the cities I've visited")
+st.subheader("The Map:")
 st.write(background + points)
 
-st.header("The list of Cities:")
-st.write(citylist)
+st.subheader("The list of Cities:")
+st.dataframe(citylist)
+
 
